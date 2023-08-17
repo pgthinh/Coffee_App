@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderScreenActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:id="@+id/myorder"
+                android:textStyle="bold"
+                android:text="MY ORDER"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/backmyOrder"/>
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/myorder"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/ongoingbold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@id/line"
+                android:layout_below="@id/myorder"
+                android:text="On Going"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/line"
+                android:text="History"
+                android:textSize="20sp"
+                android:layout_below="@id/myorder"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewmyOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_red_dark"
+        android:text="Done"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>

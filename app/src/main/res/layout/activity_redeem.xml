@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RedeemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/redeemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="REDEEM"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:id="@+id/backredeem"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:id="@+id/imageredeem1"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/americano"/>
+
+            <TextView
+                android:id="@+id/coffeeNameredeem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imageredeem1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Americano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageredeem1"
+                android:layout_below="@id/coffeeNameredeem1"
+                android:layout_marginTop="5dp"
+                android:text="Valid 10.10.2023"
+                android:textSize="15dp"
+                android:id="@+id/dateRedeem1"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/pointsRedeem1"
+                android:layout_width="154dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_marginLeft="150dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageredeem1"
+                android:textSize="12sp"
+                tools:text="120 pts" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:id="@+id/imageredeem2"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cappuccino"/>
+
+            <TextView
+                android:id="@+id/coffeeNameredeem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imageredeem2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Cappuccino" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageredeem2"
+                android:layout_below="@id/coffeeNameredeem2"
+                android:layout_marginTop="5dp"
+                android:text="Valid 10.10.2023"
+                android:textSize="15dp"
+                android:id="@+id/dateRedeem2"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/pointsRedeem2"
+                android:layout_width="154dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_marginLeft="150dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageredeem2"
+                android:textSize="12sp"
+                tools:text="120 pts" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:id="@+id/imageredeem3"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/mocha"/>
+
+            <TextView
+                android:id="@+id/coffeeNameredeem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imageredeem3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Mocha" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageredeem3"
+                android:layout_below="@id/coffeeNameredeem3"
+                android:layout_marginTop="5dp"
+                android:text="Valid 10.10.2023"
+                android:textSize="15dp"
+                android:id="@+id/dateRedeem3"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/pointsRedeem3"
+                android:layout_width="154dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_marginLeft="150dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageredeem3"
+                android:textSize="12sp"
+                tools:text="120 pts" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:id="@+id/imageredeem4"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/latte"/>
+
+            <TextView
+                android:id="@+id/coffeeNameredeem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imageredeem4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Latte" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imageredeem4"
+                android:layout_below="@id/coffeeNameredeem4"
+                android:layout_marginTop="5dp"
+                android:text="Valid 10.10.2023"
+                android:textSize="15dp"
+                android:id="@+id/dateRedeem4"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/pointsRedeem4"
+                android:layout_width="154dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_marginLeft="150dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageredeem4"
+                android:textSize="12sp"
+                tools:text="120 pts" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

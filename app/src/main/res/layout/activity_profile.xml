@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Profile"
+            android:textSize="40sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profileText"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back"
+            android:id="@+id/backProfile"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileText"
+        android:layout_marginTop="20sp">
+        <ImageView
+            android:id="@+id/peopleicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/people1"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/peopleicon"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pham Gia Thinh"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:height="40sp"
+                android:text=""
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/changename"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/change" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/phoneicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/phone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phoneicon"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+84 94 155 4814"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/editnumber"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:height="40sp"
+                android:text=""
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/changephone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/change" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mailicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/mail"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mailicon"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thinhcm2003@gmail.com"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/editmail"
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:height="40sp"
+                android:text=""
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/changemail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/change" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/addressicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/address"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/addressicon"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Address" />
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="227, Nguyen Van Cu Street, District 5, HCMC"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/editaddress"
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:height="40sp"
+                android:text=""
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/changeaddress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/change" />
+    </RelativeLayout>
+
+</LinearLayout>

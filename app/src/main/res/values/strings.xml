@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">The Coffee Shop</string>
+    <string name="americano">Smooth and balanced flavor, with mild bitterness and a hint of sweetness</string>
+    <string name="cappuccino"> Creamy Italian coffee with espresso, steamed milk, and milk foam for a rich flavor and velvety texture</string>
+    <string name="latte">Smooth espresso mixed with steamed milk, customizable and served in larger cups</string>
+    <string name="mocha">Espresso, steamed milk, and chocolate syrup combined for a rich and indulgent coffee treat</string>
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
